@@ -1,7 +1,7 @@
 {
   "name": "@toolio/proto-theme",
-  "version": "0.1.0",
-  "description": "Toolio/docs theme",
+  "version": "0.1.1",
+  "description": "Bare bones theme for @toolio/docs package.",
   "main": "src/index.js",
   "scripts": {
     "test": "node test/index.js"
@@ -12,6 +12,14 @@
     "theme"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tooliojs/proto-theme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tooliojs/proto-theme/issues"
+  },
+  "homepage": "https://github.com/tooliojs/proto-theme#readme",
   "devDependencies": {
     "@toolio/docs": "^0.1.9"
   }

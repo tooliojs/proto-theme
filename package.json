@@ -2,9 +2,9 @@
   "name": "@toolio/proto-theme",
   "version": "0.1.0",
   "description": "Toolio/docs theme",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "node index.js"
+    "test": "node test/index.js"
   },
   "keywords": [
     "toolio",
@@ -13,6 +13,6 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "@toolio/docs": "^0.1.6"
+    "@toolio/docs": "^0.1.9"
   }
 }

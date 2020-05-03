@@ -11,5 +11,8 @@
     "docs",
     "theme"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@toolio/docs": "^0.1.6"
+  }
 }

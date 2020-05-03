@@ -28,6 +28,7 @@ function orderError(code) {
 }
 
 function template(content) {
+    console.log(__dirname)
     let head = fs.readFileSync('public/template/head.html', { encoding:'utf8', flag:'r' })
     let body = fs.readFileSync('public/template/body.html', { encoding:'utf8', flag:'r' })
     return head + content + body

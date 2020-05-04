@@ -22,5 +22,9 @@
   "homepage": "https://github.com/tooliojs/proto-theme#readme",
   "devDependencies": {
     "@toolio/docs": "^0.1.9"
+  },
+  "dependencies": {
+    "js-beautify": "^1.11.0",
+    "mkcp": "^0.2.3"
   }
 }

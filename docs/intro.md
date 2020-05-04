@@ -1,15 +1,3 @@
----
-__Advertisement :)__
-
-- __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image
-  resize in browser.
-- __[babelfish](https://github.com/nodeca/babelfish/)__ - developer friendly
-  i18n with plurals support and easy syntax.
-
-You will like those projects!
-
----
-
 # h1 Heading 8-)
 ## h2 Heading
 ### h3 Heading
@@ -101,7 +89,7 @@ Indented code
     line 3 of code
 
 
-Block code "fences"
+Block code "fences" <i class="fab fa-facebook"></i>
 
 ```
 Sample text here...
@@ -119,16 +107,16 @@ console.log(foo(5));
 
 ## Tables
 
-| Option | Description |
-| ------ | ----------- |
-| data   | path to data files to supply the data that will be passed into templates. |
-| engine | engine to be used for processing templates. Handlebars is the default. |
-| ext    | extension to be used for dest files. |
+| Option | Description | Test |
+| ------ | ----------- | ---- |
+| data   | path to data files to <i class="fa fa-user"></i> supply the data that will be passed into templates. | asdasasdasdasdasdasdasdasdasdasdasdasdasdd |
+| engine | engine to be used for processing templates. Handlebars is the default. | asdasd |
+| ext    | extension to be used for dest files. | asdasdasd |
 
 Right aligned columns
 
 | Option | Description |
-| ------:| -----------:|
+| ------ | -----------:|
 | data   | path to data files to supply the data that will be passed into templates. |
 | engine | engine to be used for processing templates. Handlebars is the default. |
 | ext    | extension to be used for dest files. |

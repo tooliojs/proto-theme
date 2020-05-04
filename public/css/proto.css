@@ -1,0 +1,34 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: red;
+    --font-primary: 'Open Sans', sans-serif;
+    --nav-width: 250px;
+}
+
+* {
+    font-family: var(--font-primary);
+}
+
+.proto-header {
+    position: fixed;
+    background: red;
+    width: var(--nav-width);
+    height: 100vh;
+}
+    .proto-header--head {
+        background: orange;
+    }
+    .proto-header--body {
+        background: pink;
+    }
+
+.proto-markdown {
+    background: lime;
+    margin-left: var(--nav-width);
+}

@@ -1,79 +1,66 @@
-/* Monokai Sublime */
 
-.hljs {
-    display: block;
-    overflow-x: auto;
-    padding: .5em;
-    background: #23241f
+
+.hljs-comment,
+.hljs-quote {
+  color: #8e908c
 }
 
-.hljs,
-.hljs-subst,
-.hljs-tag {
-    color: #f8f8f2
+.hljs-deletion,
+.hljs-name,
+.hljs-regexp,
+.hljs-selector-class,
+.hljs-selector-id,
+.hljs-tag,
+.hljs-template-variable,
+.hljs-variable {
+  color: #c82829
 }
 
-.hljs-emphasis,
-.hljs-strong {
-    color: #a8a8a2
-}
-
-.hljs-bullet,
+.hljs-built_in,
+.hljs-builtin-name,
 .hljs-link,
 .hljs-literal,
+.hljs-meta,
 .hljs-number,
-.hljs-quote,
-.hljs-regexp {
-    color: #ae81ff
+.hljs-params,
+.hljs-type {
+  color: #f5871f
 }
 
-.hljs-code,
-.hljs-section,
-.hljs-selector-class,
-.hljs-title {
-    color: #a6e22e
-}
-
-.hljs-strong {
-    font-weight: 700
-}
-
-.hljs-emphasis {
-    font-style: italic
-}
-
-.hljs-attr,
-.hljs-keyword,
-.hljs-name,
-.hljs-selector-tag {
-    color: #f92672
-}
-
-.hljs-attribute,
-.hljs-symbol {
-    color: #66d9ef
-}
-
-.hljs-class .hljs-title,
-.hljs-params {
-    color: #f8f8f2
+.hljs-attribute {
+  color: #eab700
 }
 
 .hljs-addition,
-.hljs-built_in,
-.hljs-builtin-name,
-.hljs-selector-attr,
-.hljs-selector-id,
-.hljs-selector-pseudo,
+.hljs-bullet,
 .hljs-string,
-.hljs-template-variable,
-.hljs-type,
-.hljs-variable {
-    color: #e6db74
+.hljs-symbol {
+  color: #718c00
 }
 
-.hljs-comment,
-.hljs-deletion,
-.hljs-meta {
-    color: #75715e
-}  
+.hljs-section,
+.hljs-title {
+  color: #4271ae
+}
+
+.hljs-keyword,
+.hljs-selector-tag {
+  color: #8959a8
+}
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  background: #fff;
+  color: #4d4d4c;
+  padding: .5em
+}
+
+.hljs-emphasis {
+  font-style: italic
+}
+
+.hljs-strong {
+  font-weight: 700
+}
+

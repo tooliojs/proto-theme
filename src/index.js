@@ -42,8 +42,9 @@ function template(nav, content) {
     let prefix = path.join(__dirname, '..', 'public', 'template')
     let head = fs.readFileSync(path.join(prefix, 'head.html'), { encoding:'utf8', flag:'r' })
     let body = fs.readFileSync(path.join(prefix, 'body.html'), { encoding:'utf8', flag:'r' })
+    let mode = fs.readFileSync(path.join(prefix, 'mode.html'), { encoding:'utf8', flag:'r' })
     let header = fs.readFileSync(path.join(prefix, 'header.html'), { encoding:'utf8', flag:'r' })
-    return head + '\n' + header + nav + '</header><main class="proto-markdown">\n' + content + '</main>\n' + body
+    return head + '\n' + mode + header + nav + '</header><main class="proto-markdown">\n' + content + '</main>\n' + body
 }
 
 module.exports = function(options, files) {

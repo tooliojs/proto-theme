@@ -19,18 +19,6 @@ html, body {
     padding: 0;
 }
 
-.proto-mode {
-  position: fixed;
-  z-index: 2;
-  top: 0;
-  right: 0;
-  /* background: red; */
-  color: var(--color-primary);
-  font-size: 26px;
-  padding: 20px;
-  cursor: pointer;
-}
-
 .proto-header {
     position: fixed;
     z-index: 1;

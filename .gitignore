@@ -1,5 +1,4 @@
 .vscode/
 docs/__tmp__
-docs/__build__
 node_modules/
 package-lock*

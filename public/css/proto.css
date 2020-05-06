@@ -1,12 +1,11 @@
 :root {
     --color-primary: #5B5F97;
-    --color-secondary: #5B5F97;
+    --color-secondary: #F4AC32;
     --color-background: #F5F5F5;
+    --color-background-header: #FFFFFF;
     --font-primary: 'Open Sans', sans-serif;
     --font-secondary: 'Fira Code', monospace;
     --nav-width: 280px;
-    --padding: 40px;
-    --padding-sm: 20px;
 }
 
 * {
@@ -23,19 +22,21 @@ html, body {
     position: fixed;
     z-index: 1;
     top: 0;
-    background: white;
+    background: var(--color-background-header);
     width: var(--nav-width);
     height: 100vh;
-    border-right: 1px solid #d1d5da;
-    /* -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
     -moz-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
     -ms-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
     -o-box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
-    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22); */
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.proto-header:hover {
+    overflow-y: auto;
 }
     .proto-header--head {
-        color: var(--color-secondary);
-        padding: var(--padding-sm);
+        color: var(--color-primary);
+        padding: 20px;
     }
         .proto-header--head h1 {
             margin: 0;
@@ -48,14 +49,13 @@ html, body {
             list-style-type: none;
         }
             .proto-header--body ul li {
-                font-size: 18px;
-                text-transform: capitalize;
+                font-size: 17px;
             }
                 .proto-header--body ul li a {
                     display: block;
                     text-decoration: none;
                     margin: 10px 20px;
-                    color: var(--color-secondary);
+                    color: var(--color-primary);
                 }
 
 .proto-markdown {
@@ -75,19 +75,51 @@ html, body {
         letter-spacing: 1px;
         line-height: 30px;
     }
+    /* Headings */
+    .proto-markdown h1,
+    .proto-markdown h2,
+    .proto-markdown h3,
+    .proto-markdown h4,
+    .proto-markdown h5,
+    .proto-markdown h6 {
+      color: var(--color-primary);
+    }
+    .proto-markdown h1 {
+      margin-bottom: 40px;
+    }
     /* Paragraph */
     .proto-markdown p {
-        display: flex;
-        align-items: baseline;
-        font-size: 17px;
+        font-size: 15px;
+        margin: 30px 0;
     }
-      .proto-markdown p * {
-        margin-right: 8px;
-      } 
     /* Image */
     .proto-markdown img {
         width: 100%;
     }
+    /* HR */
+    .proto-markdown hr {
+      color: var(--color-primary);
+    }
+    /* Links */
+    .proto-markdown a {
+        color: var(--color-secondary);
+        text-decoration: none;
+    }
+    /* Lists */
+    /* .proto-markdown ul {} */
+        .proto-markdown ul li,
+        .proto-markdown ol li {
+            padding: 6px;
+        }
+    /* Code */
+    /* .proto-markdown pre {} */
+        .proto-markdown code {
+            border: 1px solid #d1d5da;
+            border-radius: 4px;
+            padding: 2px 6px;
+            font-family: var(--font-secondary);
+            background: white;
+        }
     /* Table */
     .proto-markdown table tr {
         border-top: 1px solid transparent;
@@ -142,11 +174,9 @@ html, body {
       
       .proto-markdown table {
         background: white;
-        /* color: #fff; */
         border-radius: .4em;
         overflow: hidden;
         width: 100%;
-        /* margin-bottom: 40px; */
         border: 1px solid #d1d5da;
       }
       .proto-markdown table tr {
@@ -164,25 +194,5 @@ html, body {
       }
       .proto-markdown table th, 
       .proto-markdown table td:before {
-        color: var(--color-secondary);
-      }    
-    /* Links */
-    .proto-markdown a {
         color: var(--color-primary);
-        text-decoration: none;
-    }
-    /* Lists */
-    /* .proto-markdown ul {} */
-        .proto-markdown ul li,
-        .proto-markdown ol li {
-            padding: 6px;
-        }
-    /* Code */
-    /* .proto-markdown pre {} */
-        .proto-markdown code {
-            border: 1px solid #d1d5da;
-            border-radius: 4px;
-            padding: 2px 6px;
-            font-family: var(--font-secondary);
-            background: white;
-        }
+      }    

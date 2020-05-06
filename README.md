@@ -14,14 +14,24 @@ npm install @toolio/docs @toolio/proto-theme --save-dev
 
 ## Usage
 ```js
-const docs = require('@toolio/docs')
-
-docs.build('html', {
-    theme: 'proto'
+require('@toolio/docs').build('html', {
+    theme: 'proto',
+    order: [
+        'your',
+        'docs',
+        'go',
+        'here'
+    ]
 })
 ```
 
-DOCUMENTATION COMING SOON...
+## Documentation
+- [Overview](https://arakilian0.github.io/proto-theme-docs/Overview.html)
+- [Getting Started](https://arakilian0.github.io/proto-theme-docs/Getting%20Started.html)
+- [Installation](https://arakilian0.github.io/proto-theme-docs/Installation.html)
+- [Build](https://arakilian0.github.io/proto-theme-docs/Build.html)
+- [Markdown](https://arakilian0.github.io/proto-theme-docs/Markdown.html)
+- [Advanced](https://arakilian0.github.io/proto-theme-docs/Advanced.html)
 
 ## License
 
